@@ -1,0 +1,17 @@
+{
+  "name": "agent-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@agentclientprotocol/sdk": "^0.25.1",
+    "uuid": "^14.0.0",
+    "ws": "^8.20.1"
+  }
+}

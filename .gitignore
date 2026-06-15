@@ -1,0 +1,23 @@
+# ── Secrets ──
+agent-server/.env
+agent/Config.local.swift
+
+# ── Xcode ──
+xcuserdata/
+*.xcuserstate
+build/
+DerivedData/
+*.xcarchive
+
+# ── Node ──
+node_modules/
+*.log
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── Editor ──
+*.swp
+*.swo
+*~
