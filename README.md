@@ -5,6 +5,17 @@ iOS 27's new Siri: instead of replying with a wall of text, it assembles the ans
 into an interface on the fly — weather cards, stock cards, navigation, train tickets,
 coffee orders, hotels, files, video… cards where cards fit, images where images fit.
 
+> ⚠️ **Status: early / experimental.** This was built fast as a proof of concept —
+> the goal is to explore *what a Siri-style generative UI on top of a personal agent
+> could feel like*, not to ship a polished product. Expect rough edges. Known limitations:
+> - **No native OS hooks** — Apple locks EventKit/Contacts/Photos writes; this talks to
+>   service APIs instead, so it won't replace system-level Siri integration.
+> - **Streaming perf** isn't fully tuned for very long replies.
+> - **Error handling is thin** in places (e.g. a failed file download is silent).
+> - **WebSocket reconnect** handles the common cases but has edge cases left.
+>
+> PRs and ideas welcome. Treat it as a starting point, not a finished app.
+
 > The agent **brain** (WeChat entry + Home Assistant + tools) lives in a separate repo:
 > **[claude-home-agent](https://github.com/aaaa-zhen/claude-home-agent)**.
 > This repo is its **iOS frontend + connection layer**, reusing the same agent.
